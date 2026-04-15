@@ -51,9 +51,3 @@ npm run preview
 - Search/storefront: `SearchBar`, `SearchSuggestions`, `ProductCard`, `SupplierOffersTable`
 - Cart/checkout: `CartItem`, `QuantitySelector`, `CheckoutForm`
 - Shared status/data: `StatusBadge`, `StatsCard`, `DataTable`, `Pagination`, `EmptyState`, `ErrorState`, `LoadingState`
-
-## GitHub Actions deploy note
-
-If your workflow uses `npm ci`, GitHub Actions requires a lock file (`package-lock.json`).
-This repository workflow intentionally uses `npm install` to avoid lock-file failures during Pages deployment.
-If you prefer `npm ci`, generate and commit `package-lock.json` first.
